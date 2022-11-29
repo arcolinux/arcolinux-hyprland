@@ -19,6 +19,6 @@ ${SCRIPTSDIR}/notifications &
 # Lauch statusbar (waybar)
 ${SCRIPTSDIR}/statusbar &
 
-#insync start &
+insync start &
 #telegram-desktop &
 #discord &

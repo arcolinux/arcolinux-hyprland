@@ -22,7 +22,6 @@ window#waybar.hidden {
 #clock,
 #cpu,
 #disk,
-#mode,
 #memory,
 #tray,
 #pulseaudio,
@@ -31,8 +30,6 @@ window#waybar.hidden {
 #custom-weather,
 #custom-updater,
 #custom-cycle_wall,
-#custom-uptime,
-#custom-cputemp,
 #network {
 	border-radius: 4px;
 	margin: 4px 0px;
