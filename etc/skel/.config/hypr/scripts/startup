@@ -19,8 +19,6 @@ ${SCRIPTSDIR}/notifications &
 # Lauch statusbar (waybar)
 ${SCRIPTSDIR}/statusbar &
 
-# Start swhkd
-# ${SCRIPTSDIR}hotkeys &
-
-# Start mpd
-# exec mpd &
+#insync start &
+#telegram-desktop &
+#discord &

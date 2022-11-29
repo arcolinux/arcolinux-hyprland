@@ -13,22 +13,22 @@
       "on-scroll-down": "~/.config/hypr/scripts/brightness --dec",
       "smooth-scrolling-threshold": 1,
     },
-	
+
 	"wlr/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
     "all-outputs": true,
     "sort-by-number": true,
     "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "ﭮ",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
       "10": "﮼",
       "focused": "",
       "default": ""
@@ -66,7 +66,6 @@
     "interval": 60,
     "align": 0,
     "rotate": 0,
-    //"timezone": "America/New_York",
     "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
     "format": " {:%d %b, %H:%M}",
     "format-alt": " {:%a %b %d, %G}",
@@ -112,7 +111,6 @@
     "format-disabled": "睊 Disabled",
     "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
     "tooltip-format": " {ifname} via {gwaddr}",
-    "on-click-right": "~/.local/bin/mmuvpn up cbj",
   },
 
   "custom/weather": {
@@ -133,24 +131,10 @@
     "on-click": "kitty --class update -T update -o font_size=13 -e yay -Syu && notify-send 'The system has been updated' "
   },
 
-  "custom/uptime":{
-    "format": " {}",
-    "exec": "$HOME/.local/bin/upt",
-    "interval": 45,
-  },
-
   "custom/cycle_wall":{
     "format":"",
     "on-click": "~/.config/hypr/scripts/changeWallpaper",
     "tooltip-format": "Change wallpaper",
-  },
-
-  "custom/vpn_check":{
-    "format":" {}",
-    "exec": "~/.config/hypr/scripts/vpnCheck",
-    "interval": 2,
-    "on-click": "~/.local/bin/mmuvpn restart",
-    "on-click-right": "~/.local/bin/mmuvpn down",
   },
 
   "pulseaudio": {
@@ -178,14 +162,8 @@
     "smooth-scrolling-threshold": 1,
   },
 
-  "custom/cputemp":{
-    "format": "{}",
-    "exec": "~/.local/bin/cputemp",
-    "interval": 1,
-  },
-
   "tray": {
-    "icon-size": 16,
+    "icon-size": 18,
     "spacing": 6
   }
 }

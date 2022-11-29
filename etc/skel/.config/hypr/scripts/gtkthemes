@@ -3,8 +3,8 @@
 ## Set GTK Themes, Icons, Cursor and Fonts
 
 THEME='Arc-Dark'
-ICONS='Sardi-Arc'
-FONT='FuraSansCondensed Nerd Font 13'
+ICONS='arcolinux-candy-beauty'
+FONT='Noto Sans 11'
 CURSOR='Bibata-Modern-Ice'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'
@@ -12,7 +12,7 @@ SCHEMA='gsettings set org.gnome.desktop.interface'
 apply_themes() {
 	${SCHEMA} gtk-theme "$THEME"
 	${SCHEMA} icon-theme "$ICONS"
-	# ${SCHEMA} cursor-theme "$CURSOR"
+	${SCHEMA} cursor-theme "$CURSOR"
 	${SCHEMA} font-name "$FONT"
 }
 

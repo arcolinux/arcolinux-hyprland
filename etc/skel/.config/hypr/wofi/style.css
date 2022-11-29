@@ -1,6 +1,6 @@
 * {
-    font-family: "FuraSansCondensed Nerd Font";
-    font-size: 17px;
+    font-family: "Noto Sans";
+    font-size: 14px;
 }
 
 #window {
@@ -22,6 +22,7 @@
 
 #scroll {
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 #inner-box {
