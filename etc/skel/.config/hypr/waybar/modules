@@ -90,7 +90,7 @@
   "custom/power": {
     "format": " 襤 ",
     "tooltip": false,
-    "on-click": "$HOME/.config/hypr/scripts/wlogout",
+    "on-click": "archlinux-logout",
   },
 
   "disk": {
