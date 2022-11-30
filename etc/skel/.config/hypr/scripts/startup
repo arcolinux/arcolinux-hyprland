@@ -13,9 +13,6 @@ done
 # Apply themes
 ${SCRIPTSDIR}/gtkthemes &
 
-# Gnome settings
-${SCRIPTSDIR}/gnomesettings &
-
 # Lauch notification daemon (mako)
 ${SCRIPTSDIR}/notifications &
 
