@@ -19,6 +19,8 @@ ${SCRIPTSDIR}/notifications &
 # Lauch statusbar (waybar)
 ${SCRIPTSDIR}/statusbar &
 
+/usr/local/bin/arcolinux-welcome-app &
+
 insync start &
 #telegram-desktop &
 #discord &
