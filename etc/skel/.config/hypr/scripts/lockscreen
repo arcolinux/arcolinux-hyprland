@@ -14,9 +14,9 @@ swaylock -f \
 	--hide-keyboard-layout \
 	--indicator-caps-lock \
 	`# Appearance` \
-	--color ${bg}E6 \
+	--color ${bg}F1 \
 	`#--image ${IMAGE} --scaling fill` \
-	--font 'PragmataPro Nerd Font Mono' --font-size 30 \
+	--font 'Noto Sans' --font-size 30 \
 	`# Backspace Key` \
 	--key-hl-color ${green} \
 	--caps-lock-key-hl-color ${blue} \
