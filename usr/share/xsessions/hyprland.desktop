@@ -2,6 +2,6 @@
 Encoding=UTF-8
 Name=Hyprland
 Comment=hyprland
-Exec=Hyprland
+Exec=~/.config/hypr/exec-hyprland
 Icon=hyprland
 Type=XSession
