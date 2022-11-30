@@ -55,4 +55,4 @@ swaylock -f \
 	--text-caps-lock-color ${fg} \
 	--text-ver-color ${bg} \
 	--text-wrong-color ${bg} \
-	--clock --indicator
+	--indicator-caps-lock
