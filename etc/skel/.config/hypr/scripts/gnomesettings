@@ -1,0 +1,11 @@
+#!/bin/bash
+
+## Set bell for TAB completion
+
+SCHEMA='gsettings set org.gnome.desktop.wm.preferences'
+
+apply_preference() {
+	${SCHEMA} audible-bell false
+}
+
+apply_preference
