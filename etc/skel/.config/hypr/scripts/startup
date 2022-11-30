@@ -19,7 +19,7 @@ ${SCRIPTSDIR}/notifications &
 # Lauch statusbar (waybar)
 ${SCRIPTSDIR}/statusbar &
 
-/usr/local/bin/arcolinux-welcome-app &
+dex $HOME/.config/autostart/arcolinux-welcome-app &
 
 insync start &
 #telegram-desktop &
