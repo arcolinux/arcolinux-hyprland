@@ -1,5 +1,12 @@
 # Hyprland on ArcoLinux ([Video](https://youtu.be/MXOsmXXafS8))
 
+
+All credits and thanks to 
+
+https://github.com/nawfalmrouyan/hyprland
+
+
+
 ![Screenshot_2022-11-28-11-56-04_13076](https://user-images.githubusercontent.com/10271030/204191449-33690ced-76d5-48a3-b880-b77bfd3db1aa.png)
 
 ![Screenshot_2022-11-28-12-01-05_4476](https://user-images.githubusercontent.com/10271030/204191455-acfa237b-8611-416f-9fb0-36037016d623.png)
