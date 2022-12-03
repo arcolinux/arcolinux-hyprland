@@ -162,6 +162,12 @@
     "smooth-scrolling-threshold": 1,
   },
 
+  "custom/keybindings": {
+  "format":" 爵 ",
+  "tooltip": false,
+  "on-click": "~/.config/hypr/scripts/keyhint.sh",
+  },
+
   "tray": {
     "icon-size": 18,
     "spacing": 6
