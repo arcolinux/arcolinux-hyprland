@@ -165,7 +165,7 @@
   "custom/keybindings": {
   "format":" 爵 ",
   "tooltip": false,
-  "on-click": "~/.config/hypr/scripts/keyhint.sh",
+  "on-click": "~/.config/hypr/scripts/keyhint",
   },
 
   "tray": {
