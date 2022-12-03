@@ -6,10 +6,11 @@ prompt=Apps
 normal_window=true
 layer=top
 term=kitty
+columns=2
 
 ## Geometry
-width=600px
-height=400px
+width=700px
+height=500px
 location=0
 orientation=vertical
 halign=fill
