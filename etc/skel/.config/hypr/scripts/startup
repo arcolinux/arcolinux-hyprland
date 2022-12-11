@@ -21,6 +21,6 @@ ${SCRIPTSDIR}/statusbar &
 
 dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
 
-insync start &
+#insync start &
 #telegram-desktop &
 #discord &
