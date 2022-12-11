@@ -14,7 +14,7 @@ swaylock -f \
 	--hide-keyboard-layout \
 	--indicator-caps-lock \
 	`# Appearance - change CC to your desired transparency` \
-	--color ${bg}CC \
+	--color ${bg}FF \
 	`#--image ${IMAGE} --scaling fill` \
 	--font 'Noto Sans' --font-size 30 \
 	`# Backspace Key` \
