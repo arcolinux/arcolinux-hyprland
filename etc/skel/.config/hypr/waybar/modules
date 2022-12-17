@@ -14,7 +14,7 @@
       "smooth-scrolling-threshold": 1,
     },
 
-	"wlr/workspaces": {
+	"wlr/workspaces-cn": {
     "format": "{icon}",
     "on-click": "activate",
     "all-outputs": true,
@@ -30,6 +30,29 @@
       "8": "八",
       "9": "九",
       "10": "十",
+      "focused": "",
+      "default": ""
+    },
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+  },
+
+  "wlr/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "sort-by-number": true,
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10",
       "focused": "",
       "default": ""
     },
