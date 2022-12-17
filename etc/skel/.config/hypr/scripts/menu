@@ -1,8 +1,8 @@
 #!/bin/bash
 
-CONFIG="$HOME/.config/arco-chadwm/wofi/config"
-STYLE="$HOME/.config/arco-chadwm/wofi/style.css"
-COLORS="$HOME/.config/arco-chadwm/wofi/colors"
+CONFIG="$HOME/.config/hypr/wofi/config"
+STYLE="$HOME/.config/hypr/wofi/style.css"
+COLORS="$HOME/.config/hypr/wofi/colors"
 
 if [[ ! $(pidof rofi) ]]; then
 	rofi --show drun --prompt 'Search...' --conf ${CONFIG} --style ${STYLE} --color ${COLORS}
