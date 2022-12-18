@@ -9,7 +9,7 @@
   Super          d        *show app menu* (`wofi small`)
   Super   Shift  d        *show app menu* (`wofi large`)
   Super          x        *show archlinux-logout* (lock/suspend/logout/reboot/shutdown)
-  Super   Shift  r        *reload config files* (`sway reload`)
+  Super   Shift  r        *reload config files* (`hyprland reload`)
   Super          Escape   *kill application*
 
 # screenshot
@@ -18,8 +18,8 @@
   Ctrl   PrintSrc         *full screenshot + timer*
 
 # application shortcuts
-  Ctrl    Shift U         *pavucontrol*
-  Ctrl    Shift P         *pamac-manager*
+  Ctrl    Alt U           *pavucontrol*
+  Ctrl    ALT P           *pamac-manager*
   Super   Shift  Return   *file manager* (`thunar`)
   Super   F1              *browser* (`firefox`)
 
@@ -41,7 +41,7 @@
   - *Wofi* is documented through man pages - `man wofi`.
   - *Multimedia keys* - may not work for every keyboard
     may need to hold down the function (`fn`) key
-  - Follow the ultimate guide - https://wiki.hyprland.org/
+  - Follow the wiki - https://wiki.hyprland.org/
   - Follow the github - https://github.com/hyprwm/Hyprland
 
 # user githubs
