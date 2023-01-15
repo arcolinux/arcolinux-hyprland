@@ -1,16 +1,16 @@
 {
   "include": "~/.config/hypr/waybar/modules",
   "layer": "top",
-  "mode": "dock",
+  //"mode": "dock",
   "exclusive": true,
   "passthrough": false,
-  "position": "bottom",
-  "spacing": 2,
+  "position": "top",
+  "spacing": 5,
   "fixed-center": true,
   "ipc": true,
-  "margin-left": 5,
-  "margin-right": 5,
+  "margin-left": 0,
+  "margin-right": 0,
 
   "modules-left": ["wlr/workspaces", "cpu", "memory", "disk"],
-  "modules-right": ["custom/updater", "pulseaudio", "custom/keybindings", "clock", "tray", "custom/power"],
+  "modules-right": ["custom/weather","custom/cycle_wall","custom/updater", "pulseaudio", "custom/keybindings", "clock", "tray", "custom/power"],
 }

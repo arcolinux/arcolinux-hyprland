@@ -6,7 +6,7 @@
 
 window#waybar {
   /* Transparent waybar. Make sure to comment out background-color: and border: */
-  background: rgba(0,0,0,0);
+  background: rgba(0,0,0,0.5);
   /* background-color: #1e1e2e; */
   /* border: 2px solid #313244; */
   transition-property: background-color;
@@ -14,7 +14,7 @@ window#waybar {
 }
 
 window#waybar.hidden {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 #backlight,
@@ -36,7 +36,7 @@ window#waybar.hidden {
 	margin: 4px 0px;
 	padding: 0px 4px;
   	color: #3A3B3C;
-  	border: 2px solid #3a3b3c;
+  	/*border: 2px solid #3a3b3c; */
 }
 
 #workspaces {
@@ -99,7 +99,7 @@ window#waybar.hidden {
 #workspaces button {
   background-color: #d9e0ee;
   color: #3A3B3C;
-  border: 2px solid #3a3b3c;
+  /* border: 2px solid #3a3b3c; */
   margin-right: 2px;
   border-radius: 4px;
 }
