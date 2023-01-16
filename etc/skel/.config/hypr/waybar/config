@@ -12,5 +12,5 @@
   "margin-right": 0,
 
   "modules-left": ["wlr/workspaces", "cpu", "memory", "disk"],
-  "modules-right": ["custom/weather","custom/cycle_wall","custom/updater", "pulseaudio", "custom/keybindings", "clock", "tray", "custom/power"],
+  "modules-right": ["custom/cycle_wall","custom/updater", "pulseaudio", "custom/keybindings", "clock", "tray", "custom/power"],
 }
