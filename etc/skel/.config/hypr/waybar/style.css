@@ -1,5 +1,5 @@
 * {
-    font-family: "Iosevka", "Noto Sans", "Roboto Condensed", sans-serif;
+    font-family: "JetBrainsMono", "Noto Sans", "Roboto Condensed", sans-serif;
     font-size: 14px;
     /* color: #3A3B3C; */
 }
@@ -116,6 +116,7 @@ window#waybar.hidden {
 #custom-power {
 	background-color: #f38ba8;
   margin-right: 4px;
+  font-size: 24px;
 }
 
 #custom-updater {
@@ -144,6 +145,7 @@ window#waybar.hidden {
 
 #custom-keybindings {
   background-color: #86b4fa;
+  font-size: 24px;
 }
 
 #pulseaudio {

@@ -110,7 +110,7 @@
   },
 
   "custom/power": {
-    "format": " 襤 ",
+    "format": "  ",
     "tooltip": false,
     "on-click": "archlinux-logout",
   },
@@ -186,7 +186,7 @@
   },
 
   "custom/keybindings": {
-  "format":" 爵 ",
+  "format":"爵",
   "tooltip": false,
   "on-click": "~/.config/hypr/scripts/keyhint",
   },
