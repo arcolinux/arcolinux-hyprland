@@ -1,7 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Hyprland
-Comment=hyprland
-Exec=/usr/bin/exec-hyprland
-Icon=hyprland
-Type=XSession
