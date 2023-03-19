@@ -30,9 +30,15 @@
 # reset - commit your changes or stash them before you merge
 # git reset --hard - personal alias - grh
 
+workdir=$(pwd)
+
 # checking if I have the latest files from github
 echo "Checking for newer files online first"
 git pull
+
+echo "getting default Hyprland config"
+wget https://raw.githubusercontent.com/hyprwm/Hyprland/main/example/hyprland.conf -O $workdir/etc/skel/.config/hypr/hyprland-original.conf
+
 
 # Below command will backup everything inside the project folder
 git add --all .
