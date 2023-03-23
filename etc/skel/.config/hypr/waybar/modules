@@ -163,7 +163,7 @@
   "pulseaudio": {
     /* "format": "{icon} {volume}% {format_source}", */
     "format": "{icon} {volume}",
-    "format-muted": " Mute",
+    "format-muted": "󰖁 Mute",
     "format-bluetooth": " {volume}% {format_source}",
     "format-bluetooth-muted": " Mute",
     "format-source": " {volume}",
@@ -175,7 +175,7 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", ""]
+      "default": ["󰕾", "󰕾", "󰕾"]
     },
     "scroll-step": 5.0,
     "on-click": "pamixer -t",
