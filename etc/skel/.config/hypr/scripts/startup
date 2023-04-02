@@ -19,6 +19,9 @@ ${SCRIPTSDIR}/notifications &
 # Lauch statusbar (waybar)
 ${SCRIPTSDIR}/statusbar &
 
+# Xauthority
+${SCRIPTSDIR}/xauthority &
+
 dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
 
 #insync start &
