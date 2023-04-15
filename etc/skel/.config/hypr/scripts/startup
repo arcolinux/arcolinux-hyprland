@@ -28,5 +28,5 @@ dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
 #dropbox &
 #telegram-desktop &
 #discord &
-#nm-applet-indicator
+#nm-applet --indicator
 #variety &
