@@ -1,5 +1,5 @@
 * {
-    font-family: "JetBrainsMono", "Noto Sans", "Roboto Condensed", sans-serif;
+    font-family: "JetBrainsMono NFM:style=Bold", "Noto Sans", "Roboto Condensed", sans-serif;
     font-size: 14px;
     /* color: #3A3B3C; */
 }
@@ -145,7 +145,7 @@ window#waybar.hidden {
 
 #custom-keybindings {
   background-color: #86b4fa;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 #pulseaudio {
