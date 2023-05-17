@@ -29,6 +29,7 @@ window#waybar.hidden {
 #custom-power,
 #custom-weather,
 #custom-updater,
+#custom-updater-improved,
 #custom-keybindings,
 #custom-cycle_wall,
 #network {
@@ -120,6 +121,10 @@ window#waybar.hidden {
 }
 
 #custom-updater {
+	background-color: #e6ed7b;
+}
+
+#custom-updater-improved {
 	background-color: #e6ed7b;
 }
 
