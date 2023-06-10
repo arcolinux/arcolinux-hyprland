@@ -3,7 +3,7 @@
 ## Set GTK Themes, Icons, Cursor and Fonts
 
 THEME='Arc-Dark'
-ICONS='arcolinux-candy-beauty'
+ICONS='a-candy-beauty-icon-theme'
 FONT='Noto Sans 11'
 CURSOR='Bibata-Modern-Ice'
 
