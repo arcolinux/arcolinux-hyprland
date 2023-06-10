@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#wallpaper fetcher and wallpaper rotator
+#type "var" in a terminal to change settings - example
+#variety &
+
 SCRIPTSDIR=$HOME/.config/hypr/scripts
 
 # Kill already running process
@@ -29,4 +33,3 @@ dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
 #telegram-desktop &
 #discord &
 #nm-applet --indicator
-#variety &
