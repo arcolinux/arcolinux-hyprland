@@ -3,18 +3,22 @@
     "interval": 2,
     "align": 0,
     "rotate": 0,
-      "format": "{icon} {percent}",
-      "format-icons": ["", "", "", ""],
-      "on-click": "",
-      "on-click-middle": "",
-      "on-click-right": "",
-      "on-update": "",
-      "on-scroll-up": "~/.config/hypr/scripts/brightness --inc",
-      "on-scroll-down": "~/.config/hypr/scripts/brightness --dec",
-      "smooth-scrolling-threshold": 1,
-    },
-
-	"wlr/workspaces-cn": {
+    "format": "{icon} {percent}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "on-click": "",
+    "on-click-middle": "",
+    "on-click-right": "",
+    "on-update": "",
+    "on-scroll-up": "~/.config/hypr/scripts/brightness --inc",
+    "on-scroll-down": "~/.config/hypr/scripts/brightness --dec",
+    "smooth-scrolling-threshold": 1,
+  },
+  "wlr/workspaces-cn": {
     "format": "{icon}",
     "on-click": "activate",
     "all-outputs": true,
@@ -36,7 +40,6 @@
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1",
   },
-
   "wlr/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
@@ -57,7 +60,6 @@
       "default": ""
     },
   },
-
   "hyprland/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
@@ -78,15 +80,14 @@
     },
     "sort-by-number": true
   },
-	
   "battery": {
-		"interval": 60,
-		"align": 0,
-		"rotate": 0,
-		//"bat": "BAT1",
-		//"adapter": "ACAD",
-		"full-at": 100,
-		"design-capacity": false,
+    "interval": 60,
+    "align": 0,
+    "rotate": 0,
+    //"bat": "BAT1",
+    //"adapter": "ACAD",
+    "full-at": 100,
+    "design-capacity": false,
     "states": {
       "good": 95,
       "warning": 30,
@@ -98,12 +99,17 @@
     "format-full": "{icon} Full",
     //"format-good": "",
     "format-alt": "{icon} {time}",
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
     "format-time": "{H}h {M}min",
     "tooltip": true,
     "on-click-right": "~/.config/hypr/scripts/glassmorphismToggle"
   },
-
   "clock": {
     "interval": 60,
     "align": 0,
@@ -113,37 +119,40 @@
     "format-alt": " {:%a %b %d, %G}",
     "on-click-right": "~/.config/hypr/scripts/changeWallpaper",
   },
-
   "cpu": {
     // "interval": 5,
     // "format": " {usage}%",
     "interval": 1,
     "format": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% ",
-    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+    "format-icons": [
+      "▁",
+      "▂",
+      "▃",
+      "▄",
+      "▅",
+      "▆",
+      "▇",
+      "█"
+    ],
   },
-           
   "custom/menu": {
     "format": "",
     "tooltip": false,
     "on-click": "$HOME/.config/hypr/scripts/menu",
   },
-
   "custom/power": {
     "format": "  ",
     "tooltip": false,
     "on-click": "archlinux-logout",
   },
-
   "disk": {
     "interval": 30,
     "format": " {free}",
   },
-
   "memory": {
     "interval": 10,
     "format": "  {used:0.1f}G",
   },
-
   "network": {
     "interval": 5,
     "format-wifi": " {essid}",
@@ -154,7 +163,6 @@
     "format-alt": " {bandwidthUpBits} |  {bandwidthDownBits}",
     "tooltip-format": " {ifname} via {gwaddr}",
   },
-
   "custom/weather": {
     "format": "{}",
     "format-alt": "{alt}: {}",
@@ -164,29 +172,25 @@
     "exec": "~/.config/hypr/scripts/weather.sh",
     "exec-if": "ping wttr.in -c1"
   },
-
-  "custom/updater":{
+  "custom/updater": {
     "format": "   {}",
     "exec": "checkupdates | wc -l",
     "exec-if": "[[ $(checkupdates | wc -l) ]]",
     "interval": 10800,
     "on-click": "kitty --class update -T update -o font_size=13 -e yay -Syu && notify-send 'The system has been updated' "
   },
-
-    "custom/updater-improved":{
+  "custom/updater-improved": {
     "format": "   {}",
     "exec": "checkupdates | wc -l",
     "exec-if": "[[ $(checkupdates | wc -l) ]]",
     "interval": 10800,
     "on-click": "kitty --class update -T update -o font_size=13 -e yay -Syu; pkill -RTMIN+8 waybar"
   },
-
-  "custom/cycle_wall":{
-    "format":"",
+  "custom/cycle_wall": {
+    "format": "",
     "on-click": "~/.config/hypr/scripts/changeWallpaper",
     "tooltip-format": "Change wallpaper",
   },
-
   "pulseaudio": {
     /* "format": "{icon} {volume}% {format_source}", */
     "format": "{icon} {volume}",
@@ -202,7 +206,11 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["󰕾", "󰕾", "󰕾"]
+      "default": [
+        "󰕾",
+        "󰕾",
+        "󰕾"
+      ]
     },
     "scroll-step": 5.0,
     "on-click": "pamixer -t",
@@ -211,23 +219,21 @@
     "on-scroll-down": "~/.config/hypr/scripts/volume --dec",
     "smooth-scrolling-threshold": 1,
   },
-
   "custom/keybindings": {
-  "format":" ",
-  "tooltip": false,
-  "on-click": "~/.config/hypr/scripts/keyhint",
+    "format": " ",
+    "tooltip": false,
+    "on-click": "~/.config/hypr/scripts/keyhint",
   },
-
   "tray": {
     "icon-size": 18,
     "spacing": 6
   },
- "temperature": {
-  // "thermal-zone": 2,
-  // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-  // "critical-threshold": 80,
-  // "format-critical": "{temperatureC}°C ",
-  "format": "{temperatureC}°C "
+  "temperature": {
+    // "thermal-zone": 2,
+    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    // "critical-threshold": 80,
+    // "format-critical": "{temperatureC}°C ",
+    "format": "{temperatureC}°C "
   },
   "bluetooth": {
     "format": " {status}",
@@ -240,9 +246,10 @@
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
   },
   "idle_inhibitor": {
-      "format": "{icon}",
-      "format-icons": {
-          "activated": "",
-          "deactivated": ""
-  },
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    },
+  }
 }
