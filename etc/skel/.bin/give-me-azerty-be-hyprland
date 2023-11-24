@@ -29,10 +29,32 @@
 echo "###############################################################################"
 echo "Switch qwerty config  with azerty config"
 echo "###############################################################################"
+echo
 
 user=$( who | cut -d ' ' -f1 | uniq)
 
-cp /home/$user/.config/hypr/hyprland-azerty.conf /home/$user/.config/hypr/hyprland.conf
+cp -v /home/$user/.config/hypr/hyprland-azerty.conf /home/$user/.config/hypr/hyprland.conf
+
+echo
+echo "###############################################################################"
+echo "Switch to mirrored screens"
+echo "###############################################################################"
+echo
+
+FIND="monitor=,preferred,auto,auto"
+REPLACE="#monitor=,preferred,auto,auto"
+sudo sed -i "s/$FIND/$REPLACE/g" /home/$user/.config/hypr/hyprland.conf
+
+# monitor=HDMI-A-1,1920x1080@60,0x0,1,mirror,HDMI-A-2
+FIND="# monitor=HDMI-A-1,1920x1080@60,0x0,1,mirror,HDMI-A-2"
+REPLACE="monitor=HDMI-A-1,1920x1080@60,0x0,1,mirror,HDMI-A-2"
+sudo sed -i "s/$FIND/$REPLACE/g" /home/$user/.config/hypr/hyprland.conf
+
+# monitor=,preferred,auto,1,mirror,HDMI-A-1
+FIND="# monitor=,preferred,auto,1,mirror,HDMI-A-1"
+REPLACE="monitor=,preferred,auto,1,mirror,HDMI-A-1"
+sudo sed -i "s/$FIND/$REPLACE/g" /home/$user/.config/hypr/hyprland.conf
+
 
 echo
 echo "###############################################################################"
