@@ -28,6 +28,6 @@ yad --width=530 --height=550 \
 "+Shift+f" "Fake fullscreen" "Behave full screen without full screen" \
 "+Shift+Spacebar" "Float" "Toggle windows to float" \
 "+p" "Dwindle effect" "pseudo" \
-"+j" "Dwindle effect" "toggle split" \
+"+Shift+p" "Dwindle effect" "toggle split" \
 "+i" "Calamares" "Install Garuda Hyprland" \
 "" "" "     Window closed in 60 sec."\
