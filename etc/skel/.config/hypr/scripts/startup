@@ -14,6 +14,12 @@ for _prs in "${_ps[@]}"; do
 	fi
 done
 
+# polkit agent
+if [[ ! 'pidof polkit-gnome-authentication-agent-1' ]];then
+	/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+fi
+
+
 # Apply themes
 ${SCRIPTSDIR}/gtkthemes &
 
