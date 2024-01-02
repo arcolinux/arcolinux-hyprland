@@ -1,0 +1,90 @@
+#!/usr/bin/env bash
+# https://github.com/Ubuntu-Sway/ubuntusway-default-settings/blob/lunar/etc/profile.d/sway.sh
+
+## Export Environment Variables and Start Wayfire
+export XDG_SESSION_TYPE=wayland
+export XDG_SESSION_DESKTOP=hyprland
+export XDG_CURRENT_DESKTOP=hyprland
+export XDG_CURRENT_SESSION=hyprland
+
+
+# Ubuntu Sway specific config dir
+export XDG_CONFIG_DIRS=/etc/xdg
+
+# Force Wayland for Mozilla Firefox
+export MOZ_ENABLE_WAYLAND=1
+export MOZ_DBUS_REMOTE=1
+
+## Qt environment
+export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_QPA_PLATFORM=wayland-egl #error with apps xcb
+#export QT_WAYLAND_FORCE_DPI=physical #uncomment this to use monitor's DPI
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+
+# Force Wayland for EFL (Enlightenment) apps
+export ECORE_EVAS_ENGINE="wayland-egl"
+export ELM_ACCEL="gl"
+
+# Java XWayland blank screens fix
+export _JAVA_AWT_WM_NONREPARENTING=1
+export NO_AT_BRIDGE=1
+export BEMENU_BACKEND=wayland
+
+## SDL environment
+export SDL_VIDEODRIVER=wayland
+
+## LibreOffice
+export SAL_USE_VCLPLUGIN=gtk3
+
+## GTK environment
+export TDESKTOP_DISABLE_GTK_INTEGRATION=1
+export CLUTTER_BACKEND=wayland
+
+## GDK
+export GDK_BACKEND="wayland,x11"
+
+export WINIT_UNIX_BACKEND=wayland
+export DBUS_SESSION_BUS_ADDRESS
+export DBUS_SESSION_BUS_PID
+
+## Check if system is running in virtual machines
+case "$(systemd-detect-virt)" in
+qemu)
+  export WLR_RENDERER=pixman
+  export WLR_NO_HARDWARE_CURSORS=1
+  ;;
+kvm)
+  export WLR_NO_HARDWARE_CURSORS=1
+  ;;
+oracle)
+  export WLR_NO_HARDWARE_CURSORS=1
+  ;;
+vmware)
+  export WLR_NO_HARDWARE_CURSORS=1
+  ;;
+none)
+  export WLR_NO_HARDWARE_CURSORS=1
+  ;;
+esac
+
+## Apply Nvidia-specific variables
+CHK_DRV=$(lspci -k | grep -A 2 -i "VGA" | awk 'NR==3' | awk -F: '{ print $2 }' | sed 's/^[ \t]*//g')
+
+if [ "$CHK_DRV" = "nvidia" ]; then
+    export LIBVA_DRIVER_NAME=nvidia
+    export WLR_NO_HARDWARE_CURSORS=1
+    export GBM_BACKEND=nvidia-drm
+    export __GLX_VENDOR_LIBRARY_NAME=nvidia
+fi
+
+if lspci -k | grep "Kernel driver in use" | grep nouveau; then 
+  export WLR_NO_HARDWARE_CURSORS=1
+fi
+
+## set default cursor size
+XCURSOR_SIZE=24
+
+## Start Hyprland
+sleep 0.5;
+Hyprland
