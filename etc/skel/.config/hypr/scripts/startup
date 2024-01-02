@@ -19,7 +19,6 @@ if [[ ! 'pidof polkit-gnome-authentication-agent-1' ]];then
 	/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 fi
 
-
 # Apply themes
 ${SCRIPTSDIR}/gtkthemes &
 
