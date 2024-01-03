@@ -136,9 +136,9 @@
     ],
   },
   "custom/menu": {
-    "format": "",
+    "format": "  ",
     "tooltip": false,
-    "on-click": "$HOME/.config/hypr/scripts/menu",
+    "on-click": "$HOME/.config/hypr/scripts/fullmenu",
   },
   "custom/power": {
     "format": "  ",
