@@ -114,6 +114,7 @@ window#waybar {
 
 #clock,
 #custom-swap,
+#custom-change-waybar,
 #custom-cava-internal,
 #battery,
 #cpu,
@@ -179,6 +180,13 @@ window#waybar {
 }
 
 #custom-swap {
+    border-radius: 10px;
+    color: @base;
+    margin-left: 5px;
+    background-color: @mauve;
+}
+
+#custom-change-waybar {
     border-radius: 10px;
     color: @base;
     margin-left: 5px;

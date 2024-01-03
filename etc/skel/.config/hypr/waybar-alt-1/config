@@ -10,6 +10,7 @@
     "custom/launcher",
     "hyprland/workspaces",
     "custom/swap",
+    "custom/change-waybar",
     "tray",
   ],
   "modules-center": ["clock"],
@@ -273,5 +274,11 @@
     //"format": "  ",
     "on-click": "~/.config/hypr/scripts/fullmenu",
     "tooltip": false
-  }
+  },
+  "custom/change-waybar": {
+    "on-click": "~/.bin/change-waybar-hyprland",
+    "tooltip": true,
+    "tooltip-format": "Swap between waybar configs",
+    "format": "CW "
+  },
 }

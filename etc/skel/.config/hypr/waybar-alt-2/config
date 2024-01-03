@@ -8,7 +8,7 @@
 
     // Choose the order of the modules
 
-    "modules-left": ["custom/launcher", "hyprland/workspaces", "hyprland/window"],
+    "modules-left": ["custom/launcher","custom/changewaybar", "hyprland/workspaces", "hyprland/window"],
     "modules-right": [ "custom/pacman", "custom/weather","backlight", "custom/keyboard-layout",  "temperature",  "cpu", "memory", "battery", "pulseaudio", "tray", "idle_inhibitor", "clock","custom/power"],
 
  // Modules configuration
@@ -168,5 +168,11 @@
         "exec": "curl 'https://wttr.in/Antwerp?format=2'",
         "interval": 900,
 	    "on-click": "yad --html --uri='https://wttr.in/Antwerp' --center --fixed --width=1000 --height=680 --timeout=60 --timeout-indicator=right"
+        },
+        "custom/changewaybar": {
+            "on-click": "~/.bin/change-waybar-hyprland",
+            "tooltip": true,
+            "tooltip-format": "Swap between waybar configs",
+            "format": "CW "
         },
     }

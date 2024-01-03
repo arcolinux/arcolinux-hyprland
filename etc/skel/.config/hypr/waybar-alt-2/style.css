@@ -70,7 +70,7 @@ window#waybar {
     border-color: #81a1c1;
 }
 
-#clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #tray, #window,#custom-launcher,#custom-power,#custom-pacman ,#custom-network_traffic,#custom-weather{
+#clock, #battery, #cpu, #memory,#idle_inhibitor, #temperature,#custom-changewaybar,#custom-keyboard-layout, #backlight, #network, #pulseaudio, #tray, #window,#custom-launcher,#custom-power,#custom-pacman ,#custom-network_traffic,#custom-weather{
     padding: 0 3px;
     border-bottom: 2px;
     border-style: solid;
@@ -154,12 +154,19 @@ window#waybar {
    color: #ebcb8b;
 }
 
+#custom-changewaybar {
+  margin: 4px 10px;
+  padding: 0px 4px;
+  border-style: hidden;
+}
+
+
 #tray {
 }
 
 #custom-launcher,#custom-power{
     border-style: hidden;
-    margin-top:2px;    
+    margin-top:2px;
 }
 
 #window{

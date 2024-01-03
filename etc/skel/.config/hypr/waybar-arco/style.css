@@ -29,6 +29,7 @@ window#waybar.hidden {
 #bluetooth,
 #idle_inhibitor,
 #pulseaudio,
+#custom-change-waybar,
 #custom-menu,
 #custom-power,
 #custom-weather,
@@ -148,6 +149,14 @@ window#waybar.hidden {
 
 #custom-uptime {
   background-color: #e6ed7b;
+}
+
+#custom-changewaybar {
+  border-radius: 4px;
+  margin: 4px 0px;
+  padding: 0px 4px;
+  color: #3A3B3C;
+  background-color: #ebcb8b;
 }
 
 #custom-weather {
