@@ -115,7 +115,7 @@ window#waybar {
 
 #clock,
 #custom-swap,
-#custom-change-waybar,
+#custom-changewaybar,
 #custom-background,
 #custom-cava-internal,
 #battery,
@@ -132,6 +132,7 @@ window#waybar {
 #tray,
 #custom-power,
 #custom-pacman,
+#custom-launcher,
 #mpd {
     padding: 5px 8px;
     border-style: solid;
@@ -180,6 +181,11 @@ window#waybar {
     font-size: 14px;
 }
 
+#custom-cava-internal {
+    border-radius: 10px;
+    color: @mauve;
+}
+
 #custom-swap {
     border-radius: 10px;
     color: @base;
@@ -187,7 +193,7 @@ window#waybar {
     background-color: @mauve;
 }
 
-#custom-change-waybar {
+#custom-changewaybar {
     border-radius: 10px;
     color: @base;
     margin-left: 5px;
@@ -313,10 +319,15 @@ window#waybar {
 #custom-power {}
 
 #custom-launcher {
-    background-color: shade(@base, 1.1);
-    color: @mauve;
-    border-radius: 0px 15px 0px 0px;
-    padding: 5px 10px 5px 10px;
+    background-color: @mauve;
+    /* background-image: url("/home/lightcrimson/.config/icons/svg/arch.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;  */
+    color: @base;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 15px;
 }
 
 #custom-power {
@@ -353,9 +364,6 @@ window#waybar {
     border-radius: 10px;
     margin-right: 10px;
 }
-
-
-
 
 /* window#waybar {
       background: #2d2a2e;

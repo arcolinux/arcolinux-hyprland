@@ -111,6 +111,7 @@ window#waybar.hidden {
 
 #custom-menu {
 	background-color: rgba(60,60,60,0.5);
+	margin-left: 4px;
 }
 
 #custom-power {

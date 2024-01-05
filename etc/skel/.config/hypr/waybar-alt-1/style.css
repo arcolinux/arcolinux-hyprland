@@ -114,7 +114,7 @@ window#waybar {
 
 #clock,
 #custom-swap,
-#custom-change-waybar,
+#custom-changewaybar,
 #custom-cava-internal,
 #battery,
 #cpu,
@@ -186,7 +186,7 @@ window#waybar {
     background-color: @mauve;
 }
 
-#custom-change-waybar {
+#custom-changewaybar {
     border-radius: 10px;
     color: @base;
     margin-left: 5px;
@@ -350,8 +350,6 @@ window#waybar {
     border-radius: 10px;
     margin-right: 10px;
 }
-
-
 
 /* window#waybar {
     background: #2d2a2e;
