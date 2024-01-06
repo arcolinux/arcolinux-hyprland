@@ -85,6 +85,9 @@ fi
 ## set default cursor size
 XCURSOR_SIZE=24
 
+## save timezone for waybar usage
+export TZ=$(cat /etc/timezone)
+
 ## Start Hyprland
 sleep 0.5;
 Hyprland
