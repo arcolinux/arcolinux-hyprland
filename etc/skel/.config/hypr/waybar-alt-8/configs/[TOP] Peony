@@ -48,10 +48,10 @@
 "wireplumber#peony": {
 	"format": "{icon} {volume}",
 	"format-muted": " Mute",
-	"on-click": "~/.config/hypr/scripts/Volume.sh --toggle",
+	"on-click": "~/.config/hypr/scripts/volume --toggle",
 	"on-click-right": "pavucontrol -t 3",
-	"on-scroll-up": "~/.config/hypr/scripts/Volume.sh --inc",
-	"on-scroll-down": "~/.config/hypr/scripts/Volume.sh --dec",
+	"on-scroll-up": "~/.config/hypr/scripts/volume --inc",
+	"on-scroll-down": "~/.config/hypr/scripts/volume --dec",
 	"format-icons": ["", "", "󰕾", ""], 
 },
 		
