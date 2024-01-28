@@ -316,7 +316,7 @@ window#waybar {
     margin-left: 15px;
 }
 
-custom-power {
+#custom-power {
     color: @base;
     background-color: @red;
     border-radius: 10px;
