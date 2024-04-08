@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/usr/share/backgrounds/archlinux-login-backgrounds/att-05.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#09344A",
+        "foreground": "#d3d8cd",
+        "cursor": "#d3d8cd"
+    },
+    "colors": {
+        "color0": "#09344A",
+        "color1": "#C49770",
+        "color2": "#38788A",
+        "color3": "#0D929F",
+        "color4": "#65A19E",
+        "color5": "#9EAE9C",
+        "color6": "#CFB68D",
+        "color7": "#d3d8cd",
+        "color8": "#93978f",
+        "color9": "#C49770",
+        "color10": "#38788A",
+        "color11": "#0D929F",
+        "color12": "#65A19E",
+        "color13": "#9EAE9C",
+        "color14": "#CFB68D",
+        "color15": "#d3d8cd"
+    }
+}
