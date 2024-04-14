@@ -171,6 +171,10 @@
     "return-type": "json",
     "exec": "~/.config/hypr/scripts/weather.sh",
     "exec-if": "ping wttr.in -c1"
+	#alternative
+    #"exec": "curl 'https://wttr.in/Antwerp?format=2'",
+    #"interval": 900,
+  	#"on-click": "yad --html --uri='https://wttr.in/Antwerp' --center --fixed --width=1000 --height=680 --timeout=60 --timeout-indicator=right"
   },
   "custom/updater": {
     "format": "   {}",
@@ -187,12 +191,11 @@
     "on-click": "kitty --class update -T update -o font_size=13 -e yay -Syu; pkill -RTMIN+8 waybar"
   },
   "custom/cycle_wall": {
-    "format": "",
-    "on-click": "~/.config/hypr/scripts/changeWallpaper",
+    "format": " ",
+    "on-click": "~/.config/hypr/scripts/changewallpaper",
     "tooltip-format": "Change wallpaper",
   },
   "pulseaudio": {
-    /* "format": "{icon} {volume}% {format_source}", */
     "format": "{icon} {volume}",
     "format-muted": "󰖁 Mute",
     "format-bluetooth": " {volume}% {format_source}",
@@ -213,7 +216,7 @@
       ]
     },
     "scroll-step": 5.0,
-    "on-click": "pamixer -t",
+    "on-click": "pulsemixer --toggle-mute",
     "on-click-right": "pavucontrol",
     "on-scroll-up": "~/.config/hypr/scripts/volume --inc",
     "on-scroll-down": "~/.config/hypr/scripts/volume --dec",
@@ -229,7 +232,7 @@
     "spacing": 6
   },
   "temperature": {
-    // "thermal-zone": 2,
+    // "thermal-zone": 3,
     // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     // "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C ",
