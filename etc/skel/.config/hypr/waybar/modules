@@ -164,17 +164,9 @@
     "tooltip-format": " {ifname} via {gwaddr}",
   },
   "custom/weather": {
-    "format": "{}",
-    "format-alt": "{alt}: {}",
-    "format-alt-click": "click-right",
-    "interval": 1800,
-    "return-type": "json",
-    "exec": "~/.config/hypr/scripts/weather.sh",
-    "exec-if": "ping wttr.in -c1"
-	#alternative
-    #"exec": "curl 'https://wttr.in/Antwerp?format=2'",
-    #"interval": 900,
-  	#"on-click": "yad --html --uri='https://wttr.in/Antwerp' --center --fixed --width=1000 --height=680 --timeout=60 --timeout-indicator=right"
+    "exec": "curl 'https://wttr.in/Antwerp?format=2'",
+    "interval": 900,
+  	"on-click": "yad --html --uri='https://wttr.in/Antwerp' --center --fixed --width=1000 --height=680 --timeout=60 --timeout-indicator=right"
   },
   "custom/updater": {
     "format": "   {}",

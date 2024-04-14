@@ -3,6 +3,11 @@
 CONFIG="$HOME/.config/hypr/waybar/config.ini"
 STYLE="$HOME/.config/hypr/waybar/style.css"
 
+# Create new css files and make your own style
+# Here is a mono look - then change the colors
+
+#STYLE="$HOME/.config/hypr/waybar/style-mono.css"
+
 # Terminate already running bar instances
 killall -q waybar
 
