@@ -3,7 +3,7 @@
 ## General
 show=drun
 prompt=Apps
-normal_window=true
+normal_window=false
 layer=top
 term=kitty
 columns=2
