@@ -1,0 +1,11 @@
+#!/bin/bash
+
+CONFIG="$HOME/.config/hypr/wofifullt/config"
+STYLE="$HOME/.config/hypr/wofifullt/style.css"
+COLORS="$HOME/.config/hypr/wofifullt/colors"
+
+if [[ ! $(pidof wofi) ]]; then
+	wofi --show drun --prompt 'Search...' --conf ${CONFIG} --style ${STYLE} --color ${COLORS}
+else
+	pkill wofi
+fi
