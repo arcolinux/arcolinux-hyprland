@@ -1,0 +1,106 @@
+#!/bin/bash
+
+echo
+tput setaf 1;
+echo "###############################################################################"
+echo "###   THIS IS A SCRIPT TO SWITCH BETWEEN HYPRLAND AND HYPRLAND-GIT         ####"
+echo "###   OR TO REMOVE HYPRLAND COMPLETELY                                     ####"
+echo "###############################################################################"
+tput sgr0
+echo
+echo "This script removes the hyprland package(s) but NOT the config"
+echo "Not changing the config may result in issues in the future"
+echo
+read -p "Are you sure you want to proceed? (Y/y) " response
+    
+if [[ $response =~ ^[Yy]$ ]]; then
+
+    # Function to install hyprland-git
+    install_hyprland_git() {
+        if pacman -Qs hyprland > /dev/null; then
+            echo "hyprland is installed. Removing it to avoid conflicts..."
+            sudo pacman -Rns hyprland
+        fi
+        
+        echo
+        echo "###########################################"
+        echo "Installing hyprland-git..."
+        echo "###########################################"
+        echo
+
+        if command -v yay > /dev/null; then
+            yay -S hyprland-git
+        elif command -v paru > /dev/null; then
+            paru -S hyprland-git
+        else
+            echo "No AUR helper found. Please install 'hyprland-git' manually."
+            exit 1
+        fi
+    }
+
+    # Function to install hyprland
+    install_hyprland() {
+        if pacman -Qs hyprland-git > /dev/null; then
+            echo "hyprland-git is installed. Removing it to avoid conflicts..."
+            sudo pacman -Rns hyprland-git
+        fi
+
+        echo
+        echo "###########################################"
+        echo "Installing hyprland..."
+        echo "###########################################"
+        echo
+        sudo pacman -S hyprland
+    }
+
+    # Function to remove any hyprland version
+    remove_hyprland() {
+        if pacman -Qs hyprland > /dev/null; then
+            echo "Removing hyprland..."
+            sudo pacman -Rns hyprland
+        fi
+        if pacman -Qs hyprland-git > /dev/null; then
+            echo "Removing hyprland-git..."
+            sudo pacman -Rns hyprland-git
+        fi
+        echo
+        echo "###########################################"
+        echo "All Hyprland versions have been removed."
+        echo "###########################################"
+        echo
+    }
+
+    # Menu for user selection
+    echo "Select an option:"
+    echo "1) Install hyprland-git (AUR version)"
+    echo "2) Install hyprland (Stable version from official repos)"
+    echo "3) Remove any installed Hyprland version"
+    echo
+    read -rp "Enter choice (1, 2, or 3): " choice
+
+    case $choice in
+        1)
+            install_hyprland_git
+            ;;
+        2)
+            install_hyprland
+            ;;
+        3)
+            remove_hyprland
+            ;;
+        *)
+            echo
+            echo "####################################"
+            echo "Invalid choice. Exiting."
+            echo "####################################"
+            echo
+            exit 1
+            ;;
+    esac
+else
+    echo
+    echo "####################################"
+    echo "Operation canceled by user."
+    echo "####################################"
+    echo
+fi
